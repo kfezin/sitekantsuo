@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200">
+  <defs>
+    <pattern id="dots" width="13" height="13" patternUnits="userSpaceOnUse"><circle cx="3" cy="3" r="2" fill="#f5f1e8" opacity=".34"/></pattern>
+    <linearGradient id="paper" x2="0" y2="1"><stop stop-color="#eedfc2"/><stop offset="1" stop-color="#d6c3a0"/></linearGradient>
+  </defs>
+  <rect width="900" height="1200" fill="#150c0b"/>
+  <path d="M0 0h900v1200H0z" fill="url(#dots)"/>
+  <path d="M82 91h736v1018H82z" fill="url(#paper)" transform="rotate(-3 450 600)"/>
+  <circle cx="655" cy="338" r="185" fill="#d0000f"/>
+  <circle cx="655" cy="338" r="139" fill="none" stroke="#0a0a0a" stroke-width="3"/>
+  <path d="M152 806h596" stroke="#0a0a0a" stroke-width="6"/>
+  <path d="M152 855h428M152 890h540M152 925h365" stroke="#0a0a0a" stroke-width="3" opacity=".7"/>
+  <path d="M130 157h60M130 157v60M770 1035h-60M770 1035v-60" fill="none" stroke="#d0000f" stroke-width="8"/>
+  <path d="M147 280h234M147 315h168M148 714h174" stroke="#0a0a0a" stroke-width="4" opacity=".55"/>
+</svg>

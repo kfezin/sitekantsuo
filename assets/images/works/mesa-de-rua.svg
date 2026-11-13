@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200">
+  <defs><pattern id="grain-dots" width="14" height="14" patternUnits="userSpaceOnUse"><circle cx="3" cy="3" r="1.6" fill="#0a0a0a" opacity=".34"/></pattern></defs>
+  <rect width="900" height="1200" fill="#e3d2b0"/>
+  <rect x="38" y="40" width="824" height="1120" fill="url(#grain-dots)"/>
+  <path d="M0 0h900v317L0 521z" fill="#d0000f"/>
+  <path d="M84 132h239M84 169h148" stroke="#f5f1e8" stroke-width="7"/>
+  <circle cx="608" cy="379" r="214" fill="#0a0a0a"/>
+  <circle cx="608" cy="379" r="162" fill="none" stroke="#e3d2b0" stroke-width="3"/>
+  <path d="M137 711h628M137 777h498M137 843h567M137 909h371" stroke="#0a0a0a" stroke-width="7"/>
+  <path d="M137 1024h202v74H137z" fill="#d0000f"/>
+  <path d="M421 1024h342v74H421z" fill="#0a0a0a"/>
+  <path d="M61 61h58M61 61v58M839 1139h-58M839 1139v-58" stroke="#d0000f" stroke-width="9" fill="none"/>
+</svg>

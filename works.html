@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0a0a0a" />
+    <meta name="description" content="Explore o arquivo de projetos de design: cardápios, sites, apps e social media." />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Trabalhos — Kantsuo" />
+    <meta property="og:description" content="Quatro distritos de arte e design, reunidos em um só arquivo." />
+    <meta property="og:image" content="assets/images/designer-character.webp" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Trabalhos — Kantsuo" />
+    <meta name="twitter:description" content="Quatro distritos de arte e design, reunidos em um só arquivo." />
+    <meta name="twitter:image" content="assets/images/designer-character.webp" />
+    <title>Trabalhos — Kantsuo</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <script type="module" src="assets/js/main.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+    <header class="site-header">
+      <div class="site-header__inner container">
+        <a class="wordmark" href="index.html" aria-label="Kantsuo — início"><span class="wordmark__mark" aria-hidden="true">K</span><span class="wordmark__name" data-site-name>KANTSUO</span></a>
+        <button class="menu-toggle" type="button" data-menu-toggle aria-controls="main-navigation" aria-expanded="false" aria-label="Abrir menu"><span class="menu-toggle__line"></span><span class="menu-toggle__line"></span></button>
+        <nav class="site-nav" id="main-navigation" data-main-nav aria-label="Navegação principal">
+          <a class="site-nav__link" href="works.html">Trabalhos <span>↗</span></a><a class="site-nav__link" href="about.html">Sobre <span>↗</span></a><a class="site-nav__link" href="contact.html">Contato <span>↗</span></a>
+          <a class="button button--small button--red site-nav__cta" href="contact.html#contact-form" data-whatsapp-link data-message="Oi! Vi seu universo de design e quero conversar sobre um projeto.">Falar no WhatsApp <span aria-hidden="true">↗</span></a>
+        </nav>
+      </div>
+    </header>
+    <main class="page-main" id="conteudo">
+      <header class="catalog-hero container" data-reveal>
+        <div class="catalog-hero__top"><p class="eyebrow"><span class="eyebrow__slash">//</span> ARQUIVO ABERTO <span data-current-year></span></p><span class="catalog-hero__coordinates">K / INDEX 001—010</span></div>
+        <h1 class="catalog-hero__title" data-page-title>TRABALHOS<span>.</span></h1>
+        <p class="catalog-hero__intro">Um arquivo em movimento. Filtre por distrito, abra um projeto e veja de perto como cada ideia encontra seu formato.</p>
+      </header>
+      <section class="catalog-section container" aria-label="Catálogo de trabalhos">
+        <div class="filter-bar" data-filters role="group" aria-label="Filtrar trabalhos por setor"></div>
+        <div class="category-heading" data-category-heading hidden>
+          <p class="eyebrow"><span data-category-code></span><span data-category-kana></span></p>
+          <div class="category-heading__main"><div><h2 data-category-title></h2><p data-category-description></p></div><span class="category-heading__count" data-category-count></span></div>
+        </div>
+        <div class="work-grid catalog-grid" data-works-grid aria-live="polite"></div>
+        <p class="catalog-note">TODOS OS TRABALHOS SÃO EXEMPLOS EDITÁVEIS. SUBSTITUA NOMES, CAPAS E GALERIAS EM <code>assets/js/data/works.js</code>.</p>
+        <noscript><p>Ative o JavaScript para carregar os filtros e projetos deste catálogo.</p></noscript>
+      </section>
+      <section class="contact-band container" aria-labelledby="catalog-contact-title" data-reveal>
+        <div class="contact-band__texture" aria-hidden="true"></div><div class="contact-band__copy"><p class="eyebrow"><span class="eyebrow__dot"></span> UMA IDEIA SUA PODE SER A PRÓXIMA</p><h2 id="catalog-contact-title">SEU PROJETO<br /><span>ENTRA AQUI.</span></h2></div>
+        <a class="button button--paper button--large" href="contact.html#contact-form">Conversar sobre meu projeto <span aria-hidden="true">↗</span></a><span class="contact-band__index" aria-hidden="true">K / 010</span>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container site-footer__top"><a class="wordmark wordmark--footer" href="index.html" aria-label="Kantsuo — início"><span class="wordmark__mark" aria-hidden="true">K</span><span class="wordmark__name" data-site-name>KANTSUO</span></a><p class="site-footer__line">IDEIAS COM ENDEREÇO.<br /><span>IMAGINAÇÃO SEM LIMITE.</span></p><nav class="footer-links" aria-label="Links sociais"><a href="" data-social-link="instagram" hidden>Instagram <span aria-hidden="true">↗</span></a><a href="" data-social-link="behance" hidden>Behance <span aria-hidden="true">↗</span></a><a href="" data-social-link="email" hidden>E-mail <span aria-hidden="true">↗</span></a></nav></div>
+      <div class="container site-footer__bottom"><span>© <span data-current-year></span> <span data-site-name>KANTSUO</span> — <span data-site-city>Salvador, BA</span></span><span class="site-footer__micro">FEITO DE IDEIAS, CAFÉ E PIXELS <span aria-hidden="true">✦</span></span><a href="#conteudo">Voltar ao topo ↑</a></div>
+    </footer>
+    <a class="whatsapp-float" href="contact.html#contact-form" data-whatsapp-link data-message="Oi! Vi seu universo de design e quero conversar." aria-label="Falar com o designer pelo WhatsApp"><span class="whatsapp-float__dot" aria-hidden="true"></span><span>VAMOS CONVERSAR</span><span aria-hidden="true">↗</span></a>
+  </body>
+</html>

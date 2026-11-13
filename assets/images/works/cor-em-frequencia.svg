@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+  <defs><pattern id="screen" width="14" height="14" patternUnits="userSpaceOnUse"><circle cx="4" cy="4" r="2" fill="#0a0a0a" opacity=".32"/></pattern></defs>
+  <rect width="1000" height="1000" fill="#e3d2b0"/>
+  <rect width="1000" height="1000" fill="url(#screen)"/>
+  <path d="M0 0h1000L0 1000z" fill="#d0000f"/>
+  <circle cx="631" cy="400" r="256" fill="#0a0a0a"/>
+  <circle cx="631" cy="400" r="180" fill="none" stroke="#e3d2b0" stroke-width="4"/>
+  <circle cx="631" cy="400" r="99" fill="#2e5bff"/>
+  <path d="M95 762h420M95 819h307M95 876h382" stroke="#0a0a0a" stroke-width="18"/>
+  <path d="M77 69h88M77 69v88M923 931h-88M923 931v-88" stroke="#f5f1e8" stroke-width="9" fill="none"/>
+  <path d="M0 957h1000" stroke="#ff1a2b" stroke-width="34"/>
+</svg>

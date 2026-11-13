@@ -1,0 +1,29 @@
+:root {
+  color-scheme: dark;
+  --color-black: #0a0a0a;
+  --color-black-soft: #101010;
+  --color-black-panel: #151515;
+  --color-red: #d0000f;
+  --color-red-bright: #ff1a2b;
+  --color-paper: #e3d2b0;
+  --color-white: #f5f1e8;
+  --color-muted: #a8a49b;
+  --color-line: rgb(245 241 232 / 18%);
+  --color-blue: #2e5bff;
+  --font-display: "Anton", Impact, sans-serif;
+  --font-body: "DM Sans", Arial, sans-serif;
+  --font-mono: "Space Mono", monospace;
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2rem;
+  --space-5: 3rem;
+  --space-6: 4rem;
+  --space-7: 6rem;
+  --space-8: 8rem;
+  --radius-sm: 0.25rem;
+  --radius-md: 0.75rem;
+  --radius-pill: 999px;
+  --container-max: 1280px;
+  --ease-out: cubic-bezier(0.2, 0.8, 0.2, 1);
+}

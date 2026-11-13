@@ -1,0 +1,62 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  scroll-behavior: smooth;
+  scroll-padding-top: 5.5rem;
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+figure {
+  margin: 0;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  color: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+img,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+img {
+  height: auto;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+::selection {
+  color: var(--color-white);
+  background: var(--color-red);
+}

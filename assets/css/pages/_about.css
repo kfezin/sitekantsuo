@@ -1,0 +1,25 @@
+.about-hero { padding-block: clamp(4.5rem, 10vw, 8rem) 2rem; }
+.about-hero__title { margin-top: 1.2rem; font-size: clamp(3.6rem, 11vw, 8.5rem); }
+.about-hero__title span, .about-profile__name span { color: var(--color-red-bright); }
+.about-hero__sub { margin-top: 1.25rem; color: var(--color-paper); font-family: var(--font-mono); font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase; }
+.about-profile { display: grid; grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr); align-items: center; gap: clamp(2rem, 7vw, 7rem); padding-block: 1rem clamp(4rem, 8vw, 7rem); }
+.about-profile__visual { position: relative; display: grid; min-height: 30rem; place-items: end center; overflow: hidden; isolation: isolate; background: var(--color-black-soft); }
+.about-profile__disc { position: absolute; z-index: -1; top: 13%; left: 12%; width: 76%; aspect-ratio: 1; border-radius: 50%; background: radial-gradient(circle at 35% 30%, #ff2637 0, var(--color-red) 56%, #6c020a 100%); }
+.about-profile__visual img { display: block; width: min(88%, 27rem); max-height: 38rem; object-fit: contain; object-position: bottom center; filter: drop-shadow(12px 15px 20px rgb(0 0 0 / 38%)); }
+.about-profile__copy { padding-block: 1rem; }
+.about-profile__name { margin-top: 1rem; font-size: clamp(2.7rem, 5vw, 5.2rem); }
+.about-profile__bio { max-width: 40rem; margin-top: 1.3rem; font-size: 1.05rem; line-height: 1.75; }
+.about-profile__note { margin-top: 1rem; color: var(--color-paper); font-family: var(--font-mono); font-size: 0.62rem; }
+.about-profile__note code { color: var(--color-white); }
+.about-profile__copy .button { margin-top: 1.5rem; }
+.about-offer { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(2rem, 6vw, 6rem); padding-block: clamp(3.5rem, 7vw, 6rem); border-top: 1px solid var(--color-line); border-bottom: 1px solid var(--color-line); }
+.about-offer__column h2 { margin-top: 0.6rem; font-size: clamp(2.7rem, 5vw, 4.4rem); }
+.about-list { margin: 1.4rem 0 0; padding: 0; list-style: none; }
+.about-list li { display: flex; min-height: 3.4rem; align-items: center; gap: 0.75rem; border-top: 1px solid var(--color-line); color: var(--color-white); }
+.about-list li::before { color: var(--color-red-bright); content: "↗"; }
+.about-profile + .about-offer + .contact-band { margin-block: clamp(4rem, 8vw, 7rem); }
+@media (max-width: 767px) {
+  .about-profile { grid-template-columns: minmax(0, 1fr); }
+  .about-profile__visual { width: min(100%, 32rem); min-height: 26rem; margin-inline: auto; }
+  .about-offer { grid-template-columns: minmax(0, 1fr); gap: 2.5rem; }
+}

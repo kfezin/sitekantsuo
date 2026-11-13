@@ -1,0 +1,47 @@
+.contact-hero { padding-block: clamp(4.5rem, 10vw, 8rem) 3rem; }
+.contact-hero__title { margin-top: 1.2rem; font-size: clamp(3.3rem, 10vw, 8rem); }
+.contact-hero__title span { color: var(--color-red-bright); }
+.contact-hero__intro { max-width: 38rem; margin-top: 1.3rem; font-size: clamp(1rem, 1.7vw, 1.2rem); }
+.contact-layout { display: grid; grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr); gap: clamp(2rem, 6vw, 6rem); padding-bottom: clamp(4rem, 8vw, 7rem); }
+.contact-card, .contact-form-wrap { min-width: 0; padding: clamp(1.25rem, 3vw, 2.5rem); border: 1px solid var(--color-line); background: var(--color-black-soft); }
+.contact-card h2, .contact-form-wrap h2 { margin-top: 0.9rem; font-size: clamp(2.3rem, 5vw, 4.35rem); }
+.contact-card h2 span { color: var(--color-red-bright); }
+.contact-channels { display: grid; margin-top: 1.5rem; }
+.contact-channel { display: flex; min-height: 6.2rem; flex-direction: column; justify-content: center; gap: 0.2rem; padding-block: 0.85rem; border-top: 1px solid var(--color-line); color: var(--color-white); text-decoration: none; }
+.contact-channel[hidden] { display: none; }
+.contact-channel:hover strong { color: var(--color-paper); }
+.contact-channel__label, .contact-channel__note { color: var(--color-muted); font-family: var(--font-mono); font-size: 0.56rem; letter-spacing: 0.07em; }
+.contact-channel__label { color: var(--color-red-bright); }
+.contact-channel strong { font-family: var(--font-display); font-size: 1.55rem; font-weight: 400; text-transform: uppercase; }
+.contact-form { display: grid; margin-top: 1.35rem; }
+.contact-form label { margin: 0.8rem 0 0.4rem; color: var(--color-white); font-size: 0.78rem; }
+.contact-form label span { color: var(--color-red-bright); }
+.contact-form input, .contact-form textarea { width: 100%; min-height: 46px; padding: 0.8rem 0.9rem; border: 1px solid rgb(245 241 232 / 24%); border-radius: 0; color: var(--color-white); background: #0b0b0b; font: inherit; font-size: 0.88rem; }
+.contact-form textarea { min-height: 8rem; resize: vertical; }
+.contact-form input::placeholder, .contact-form textarea::placeholder { color: #77746e; }
+.contact-form input:focus-visible, .contact-form textarea:focus-visible { border-color: var(--color-paper); }
+.contact-form .button { justify-self: start; margin-top: 1.2rem; cursor: pointer; }
+.contact-form__status { min-height: 1.5rem; margin-top: 0.8rem; color: var(--color-paper); font-size: 0.8rem; overflow-wrap: anywhere; }
+.contact-form__privacy { margin-top: 0.5rem; font-family: var(--font-mono); font-size: 0.58rem; }
+.contact-location { display: flex; min-height: 4.5rem; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.75rem; border-top: 1px solid var(--color-line); color: var(--color-muted); font-family: var(--font-mono); font-size: 0.6rem; letter-spacing: 0.06em; }
+.contact-location strong { color: var(--color-white); font-weight: 400; }
+.not-found { position: relative; display: flex; min-height: min(72vh, 54rem); flex-direction: column; justify-content: center; overflow: hidden; isolation: isolate; padding-block: 5rem; }
+.not-found__rings { position: absolute; z-index: -1; top: 50%; right: -3%; width: min(53vw, 38rem); aspect-ratio: 1; transform: translateY(-50%); }
+.not-found__rings span { position: absolute; border: 1px solid rgb(208 0 15 / 40%); border-radius: 50%; }
+.not-found__rings span:nth-child(1) { inset: 0; }
+.not-found__rings span:nth-child(2) { inset: 13%; }
+.not-found__rings span:nth-child(3) { inset: 26%; }
+.not-found__code { position: absolute; z-index: -1; top: 50%; right: 4%; color: rgb(245 241 232 / 5%); font-family: var(--font-display); font-size: clamp(12rem, 35vw, 34rem); line-height: 0.8; transform: translateY(-50%); }
+.not-found h1 { margin-top: 1.2rem; font-size: clamp(3.4rem, 9vw, 7.5rem); }
+.not-found h1 span { color: var(--color-red-bright); }
+.not-found__copy { max-width: 32rem; margin-top: 1.2rem; }
+.not-found__actions { display: flex; align-items: center; flex-wrap: wrap; gap: 1rem 1.5rem; margin-top: 1.6rem; }
+@media (max-width: 767px) {
+  .contact-layout { grid-template-columns: minmax(0, 1fr); }
+  .contact-location { justify-content: flex-start; }
+  .not-found__rings { top: 30%; right: -30%; width: 75vw; }
+  .not-found__code { top: 28%; right: -3%; font-size: 48vw; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .filter-chip, .project-gallery__button img { transition: none; }
+}

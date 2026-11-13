@@ -1,0 +1,26 @@
+.tag {
+  display: inline-flex;
+  min-height: 27px;
+  align-items: center;
+  padding: 0.35rem 0.55rem;
+  font-size: 0.57rem;
+  font-weight: 700;
+  letter-spacing: 0.11em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.tag--example {
+  position: absolute;
+  z-index: 3;
+  top: 0.85rem;
+  right: 0.85rem;
+  color: var(--color-black);
+  background: var(--color-paper);
+  transform: rotate(3deg);
+}
+
+.tag--restricted {
+  color: var(--color-white);
+  background: var(--color-red);
+}

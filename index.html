@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0a0a0a" />
+    <meta name="description" content="Um universo de arte e design: cardápios, sites, apps e social media criados por Kantsuo." />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Kantsuo — Universo de arte e design" />
+    <meta property="og:description" content="Quatro distritos. Infinitas formas de criar." />
+    <meta property="og:image" content="assets/images/designer-character.webp" />
+    <meta property="og:image:width" content="1195" />
+    <meta property="og:image:height" content="1600" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Kantsuo — Universo de arte e design" />
+    <meta name="twitter:description" content="Quatro distritos. Infinitas formas de criar." />
+    <meta name="twitter:image" content="assets/images/designer-character.webp" />
+    <title>Kantsuo — Universo de arte e design</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <script type="module" src="assets/js/main.js"></script>
+<script>
+  document.querySelectorAll('[data-typewriter]').forEach((el) => {
+    const text = el.textContent.trim().replace(/\s+/g, ' ');
+    const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    if (reduceMotion) {
+      el.textContent = text;
+      el.classList.add('is-done');
+      return;
+    }
+
+    el.setAttribute('aria-label', text);
+    el.textContent = '';
+
+    let i = 0;
+    setTimeout(function tick() {
+      el.textContent = text.slice(0, ++i);
+      if (i < text.length) {
+        setTimeout(tick, 35); // velocidade: menor = mais rápido
+      } else {
+        el.classList.add('is-done');
+      }
+    }, 500); // atraso inicial
+  });
+</script>
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <header class="site-header">
+      <div class="site-header__inner container">
+        <a class="wordmark" href="index.html" aria-label="Kantsuo — início">
+          <span class="wordmark__mark" aria-hidden="true">K</span>
+          <span class="wordmark__name" data-site-name>KANTSUO</span>
+        </a>
+
+        <button class="menu-toggle" type="button" data-menu-toggle aria-controls="main-navigation" aria-expanded="false" aria-label="Abrir menu">
+          <span class="menu-toggle__line"></span>
+          <span class="menu-toggle__line"></span>
+        </button>
+
+        <nav class="site-nav" id="main-navigation" data-main-nav aria-label="Navegação principal">
+          <a class="site-nav__link" href="works.html">Trabalhos <span>↗</span></a>
+          <a class="site-nav__link" href="about.html">Sobre <span>↗</span></a>
+          <a class="site-nav__link" href="contact.html">Contato <span>↗</span></a>
+          <a class="button button--small button--red site-nav__cta" href="contact.html#contact-form" data-whatsapp-link data-message="Oi! Vi seu universo de design e quero conversar sobre um projeto.">Falar no WhatsApp <span aria-hidden="true">↗</span></a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="conteudo">
+      <section class="hero container" aria-labelledby="hero-title">
+        <div class="hero__copy" data-reveal>
+        <p class="eyebrow">
+          <span class="eyebrow__dot"></span>
+          <span class="typewriter" data-speed="45" data-delay="500">UNIVERSO DE ARTE E DESIGN</span>
+          <span class="eyebrow__divider">/</span>
+          <span data-current-year></span>
+        </p>
+          <h1 class="hero__title" id="hero-title">ARTE, DESIGN <span class="hero__title-light">E TUDO QUE</span> <span class="hero__title-red">EU CRIO.</span></h1>
+          <p class="hero__intro">Um universo em expansão, feito de ideias que ganham forma. Do primeiro traço à última tela.</p>
+          <div class="hero__actions">
+            <a class="button button--paper" href="works.html">Entrar no universo <span aria-hidden="true">↘</span></a>
+            <a class="text-link" href="contact.html#contact-form" data-whatsapp-link data-message="Oi! Quero conversar sobre um projeto de design.">Falar com o designer <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="hero__coordinates" aria-hidden="true"><span>21°24'00"N</span><span>89°31'00"W</span><span>TODO DESIGN NASCE DE UMA EXPLOSÃO</span></div>
+        </div>
+
+        <div class="hero__visual" data-reveal>
+          <div class="hero__orbit hero__orbit--outer" aria-hidden="true"></div>
+          <div class="hero__orbit hero__orbit--inner" aria-hidden="true"></div>
+          <div class="hero__red-disc" aria-hidden="true"></div>
+          <div class="hero__mockup" aria-hidden="true">
+            <span class="hero__mockup-label">ESTUDO / 01</span>
+            <span class="hero__mockup-bar"></span>
+            <span class="hero__mockup-bar hero__mockup-bar--short"></span>
+            <span class="hero__mockup-swatch"></span>
+          </div>
+          <div class="hero__capsule fx--tada-loop" aria-hidden="true"><span>IDEIAS EM ÓRBITA</span><span>●</span></div>
+          <span class="hero__visual-code" aria-hidden="true">KFZ / 001</span>
+          <img class="hero__portrait" src="assets/images/designer-character.webp" alt="Ilustração monocromática do designer de perfil, segurando um celular e usando uma jaqueta ilustrada." width="1195" height="1600" fetchpriority="high" />
+          <p class="hero__portrait-note"><span>O CRIADOR</span><strong>POR TRÁS<br />DO UNIVERSO</strong></p>
+          <span class="hero__vertical" aria-hidden="true">GOOD FOR HEALTH...</span>
+        </div>
+
+        <div class="hero__stamp" aria-hidden="true"><span>●</span><span>ACESSO<br />LIBERADO</span></div>
+      </section>
+
+        <div class="marquee" aria-label="Universo de arte e design">
+          <div class="marquee__track">
+            <div class="marquee__group">
+              <span class="marquee__item">12°58′ S <i>✦</i> 38°30′ W <i>✦</i> TODO DESIGN NASCE DE UMA EXPLOSÃO <i>✦</i> KANTSUO <i>✦</i> ARTE & DESIGN <i>✦</i></span>
+              <span class="marquee__item">12°58′ S <i>✦</i> 38°30′ W <i>✦</i> TODO DESIGN NASCE DE UMA EXPLOSÃO <i>✦</i> KANTSUO <i>✦</i> ARTE & DESIGN <i>✦</i></span>
+              <span class="marquee__item">12°58′ S <i>✦</i> 38°30′ W <i>✦</i> TODO DESIGN NASCE DE UMA EXPLOSÃO <i>✦</i> KANTSUO <i>✦</i> ARTE & DESIGN <i>✦</i></span>
+            </div>
+
+            <div class="marquee__group" aria-hidden="true">
+              <span class="marquee__item">12°58′ S <i>✦</i> 38°30′ W <i>✦</i> TODO DESIGN NASCE DE UMA EXPLOSÃO <i>✦</i> KANTSUO <i>✦</i> ARTE & DESIGN <i>✦</i></span>
+              <span class="marquee__item">12°58′ S <i>✦</i> 38°30′ W <i>✦</i> TODO DESIGN NASCE DE UMA EXPLOSÃO <i>✦</i> KANTSUO <i>✦</i> ARTE & DESIGN <i>✦</i></span>
+              <span class="marquee__item">12°58′ S <i>✦</i> 38°30′ W <i>✦</i> TODO DESIGN NASCE DE UMA EXPLOSÃO <i>✦</i> KANTSUO <i>✦</i> ARTE & DESIGN <i>✦</i></span>
+            </div>
+          </div>
+        </div>
+
+      <section class="sectors section-shell container" aria-labelledby="sectors-title">
+        <div class="section-heading" data-reveal>
+          <div>
+            <p class="eyebrow"><span class="eyebrow__slash">//</span> MAPA DO UNIVERSO</p>
+            <h2 class="section-title" id="sectors-title">ESCOLHA UM <span>DISTRITO.</span></h2>
+          </div>
+          <p class="section-heading__note">Cada ideia abre uma porta.<br />Qual é a próxima parada?</p>
+        </div>
+        <div class="sector-grid" data-categories-grid aria-live="polite"></div>
+      </section>
+
+      <section class="featured section-shell" aria-labelledby="featured-title">
+        <div class="container">
+          <div class="section-heading section-heading--featured" data-reveal>
+            <div>
+              <p class="eyebrow"><span class="eyebrow__slash">//</span> ARQUIVO EM DESTAQUE</p>
+              <h2 class="section-title" id="featured-title">SINAIS DE <span>VIDA.</span></h2>
+            </div>
+            <a class="text-link text-link--light" href="works.html">Explorar todos os trabalhos <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="work-grid" data-featured-grid aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section style="gap: 70px;" class="hero container" aria-labelledby="hero-title">
+
+        <div class="hero__visual" data-reveal>          
+          <div class="hero__orbit hero__orbit--outer" aria-hidden="true">
+          <span class="hero__vertical" aria-hidden="true">...BAD FOR EDUCATION</span>
+
+          </div>
+          <div class="hero__orbit hero__orbit--inner" aria-hidden="true"></div>
+          <div class="hero__red-disc" aria-hidden="true"></div>
+          <div class="hero__mockup_2" aria-hidden="true">
+            <span style="color: black;" class="text-link">Functions / 00</span>
+            <span class="hero__mockup-label">Design / 01</span>
+            <span class="hero__mockup-label">Social Media Design / 02</span>
+            <span class="hero__mockup-label">Design de cardápio / 03</span>
+            <span class="hero__mockup-label">Direção de arte / 04</span>
+            <span class="hero__mockup-label">Web / App design / 05</span>
+            <span class="hero__mockup-label">Tipografia / 06</span>
+            <span class="hero__mockup-label">Desenvolvimento de sistemas / 07</span>
+            <span class="hero__mockup-label">Design de interface / 08</span>
+            <span class="hero__mockup-label">Sistema gráfico / 09</span>
+            <span class="hero__mockup-label">Banco de dados / 10</span>
+            <span class="hero__mockup-label">UX design / 11</span>
+            <span class="hero__mockup-label">UI design / 12</span>
+            <span class="hero__mockup-label">Continue... </span>
+            <span class="hero__mockup-bar"></span>
+            <span class="hero__mockup-bar hero__mockup-bar--short"></span>
+            <span class="hero__mockup-swatch"></span>
+          </div>
+          <div style="top: 22%; right: 1%;" class="hero__capsule fx--tada-loop" aria-hidden="true"><span>MORE EXPERIENCE</span><span>●</span></div>
+          <span class="hero__visual-code" aria-hidden="true">KFZ / 001</span>
+          <img class="hero__portrait_2" src="assets/images/Guilherme.webp" alt="Ilustração monocromática do designer de perfil, segurando um celular e usando uma jaqueta ilustrada." width="1195" height="1600" fetchpriority="high" />
+        </div>
+
+        <div class="hero__copy" data-reveal>
+        <p class="eyebrow">
+          <span class="eyebrow__dot"></span>
+          <span class="typewriter" data-speed="45" data-delay="500">UNIVERSO DE ARTE E DESIGN</span>
+          <span class="eyebrow__divider">/</span>
+          <span data-current-year></span>
+        </p>
+          <p class="hero__intro">Design que respira, deixe que o design fale por você. Aumente seu ganho, atravéz do design.</p>
+          <div class="hero__actions">
+            <a class="button button--paper" href="about.html">Sobre mim <span aria-hidden="true">↘</span></a>          </div>
+          <div class="hero__coordinates" aria-hidden="true"><span>21°24'00"N</span><span>89°31'00"W</span><span>TODO DESIGN NASCE DE UMA EXPLOSÃO</span></div>
+        </div>
+
+        </section>
+        
+      <section class="contact-band container" aria-labelledby="contact-title" data-reveal>
+        <div class="contact-band__texture" aria-hidden="true"></div>
+        <div class="contact-band__copy">
+          <p class="eyebrow"><span class="eyebrow__dot"></span> PRÓXIMO PASSO: SEU PROJETO</p>
+          <h2 id="contact-title">VAMOS CRIAR<br /><span>ALGO QUE MARCA.</span></h2>
+        </div>
+        <a class="button button--paper button--large" href="contact.html#contact-form" data-whatsapp-link data-message="Oi! Quero tirar uma ideia do papel com você.">Chamar no WhatsApp <span aria-hidden="true">↗</span></a>
+        <span class="contact-band__index" aria-hidden="true">K / 04</span>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__top">
+        <a class="wordmark wordmark--footer" href="index.html" aria-label="Kantsuo — início">
+          <span class="wordmark__mark" aria-hidden="true">K</span>
+          <span class="wordmark__name" data-site-name>KANTSUO</span>
+        </a>
+        <p class="site-footer__line">IDEIAS COM ENDEREÇO.<br /><span>IMAGINAÇÃO SEM LIMITE.</span></p>
+        <nav class="footer-links" aria-label="Links sociais">
+          <a href="" data-social-link="instagram" hidden>Instagram <span aria-hidden="true">↗</span></a>
+          <a href="" data-social-link="behance" hidden>Behance <span aria-hidden="true">↗</span></a>
+          <a href="" data-social-link="email" hidden>E-mail <span aria-hidden="true">↗</span></a>
+        </nav>
+      </div>
+      <div class="container site-footer__bottom">
+        <span>© <span data-current-year></span> <span data-site-name>KANTSUO</span> — <span data-site-city>Salvador, BA</span></span>
+        <span class="site-footer__micro">FEITO DE IDEIAS, CAFÉ E PIXELS <span aria-hidden="true">✦</span></span>
+        <a href="#conteudo">Voltar ao topo ↑</a>
+      </div>
+    </footer>
+
+    <a class="whatsapp-float" href="contact.html#contact-form" data-whatsapp-link data-message="Oi! Vi seu universo de design e quero conversar." aria-label="Falar com o designer pelo WhatsApp">
+      <span class="whatsapp-float__dot" aria-hidden="true"></span><span>VAMOS CONVERSAR</span><span aria-hidden="true">↗</span>
+    </a>
+  </body>
+</html>

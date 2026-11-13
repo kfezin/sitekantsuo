@@ -1,0 +1,104 @@
+.lightbox {
+  width: min(96vw, 74rem);
+  max-width: none;
+  max-height: min(94vh, 60rem);
+  padding: 0;
+  border: 1px solid var(--color-line);
+  color: var(--color-white);
+  background: #080808;
+}
+
+.lightbox::backdrop {
+  background: rgb(0 0 0 / 88%);
+  backdrop-filter: blur(8px);
+}
+
+.lightbox__shell {
+  display: flex;
+  max-height: min(94vh, 60rem);
+  flex-direction: column;
+  padding: clamp(0.75rem, 2vw, 1.5rem);
+}
+
+.lightbox__toolbar {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.lightbox__toolbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.lightbox__counter {
+  color: var(--color-muted);
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+}
+
+.lightbox__close,
+.lightbox__arrow {
+  display: inline-grid;
+  min-width: 44px;
+  min-height: 44px;
+  place-items: center;
+  border: 1px solid var(--color-line);
+  color: var(--color-white);
+  background: var(--color-black-soft);
+  font-family: var(--font-mono);
+  cursor: pointer;
+}
+
+.lightbox__close {
+  padding-inline: 0.85rem;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+}
+
+.lightbox__arrow {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgb(10 10 10 / 82%);
+  font-size: 1.3rem;
+  transform: translateY(-50%);
+}
+
+.lightbox__arrow--previous { left: 0.5rem; }
+.lightbox__arrow--next { right: 0.5rem; }
+
+.lightbox__arrow:hover,
+.lightbox__close:hover {
+  border-color: var(--color-red-bright);
+  color: var(--color-paper);
+}
+
+.lightbox__figure {
+  position: relative;
+  display: grid;
+  min-height: 12rem;
+  flex: 1;
+  place-items: center;
+  margin: 0;
+}
+
+.lightbox__image {
+  display: block;
+  max-width: 100%;
+  max-height: calc(94vh - 6rem);
+  object-fit: contain;
+}
+
+@media (max-width: 639px) {
+  .lightbox__arrow--previous { left: 0.25rem; }
+  .lightbox__arrow--next { right: 0.25rem; }
+  .lightbox__arrow { width: 44px; height: 44px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .lightbox { scroll-behavior: auto; }
+}

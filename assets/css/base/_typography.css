@@ -1,0 +1,47 @@
+body {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.55;
+  color: var(--color-white);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+.display-type {
+  font-family: var(--font-display);
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: -0.025em;
+  line-height: 0.9;
+}
+
+code,
+kbd,
+samp,
+small,
+.eyebrow,
+.site-nav__link,
+.text-link,
+.button,
+.tag,
+.sector-card__code,
+.sector-card__kana,
+.sector-card__count,
+.sector-card__open,
+.work-card__category,
+.work-card__year,
+.site-footer__micro {
+  font-family: var(--font-mono);
+}
+
+small {
+  font-size: 0.75rem;
+}
+
+p {
+  color: var(--color-muted);
+}
