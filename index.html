@@ -22,31 +22,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <script type="module" src="assets/js/main.js"></script>
-<script>
-  document.querySelectorAll('[data-typewriter]').forEach((el) => {
-    const text = el.textContent.trim().replace(/\s+/g, ' ');
-    const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-    if (reduceMotion) {
-      el.textContent = text;
-      el.classList.add('is-done');
-      return;
-    }
-
-    el.setAttribute('aria-label', text);
-    el.textContent = '';
-
-    let i = 0;
-    setTimeout(function tick() {
-      el.textContent = text.slice(0, ++i);
-      if (i < text.length) {
-        setTimeout(tick, 35); // velocidade: menor = mais rápido
-      } else {
-        el.classList.add('is-done');
-      }
-    }, 500); // atraso inicial
-  });
-</script>
   </head>
   <body>
     <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
@@ -91,7 +66,9 @@
         </div>
 
         <div class="hero__visual" data-reveal>
-          <div class="hero__orbit hero__orbit--outer" aria-hidden="true"></div>
+          <div class="hero__orbit hero__orbit--outer" aria-hidden="true">
+          <span class="hero__vertical" aria-hidden="true">GOOD FOR HEALTH...</span>
+          </div>
           <div class="hero__orbit hero__orbit--inner" aria-hidden="true"></div>
           <div class="hero__red-disc" aria-hidden="true"></div>
           <div class="hero__mockup" aria-hidden="true">
@@ -104,7 +81,6 @@
           <span class="hero__visual-code" aria-hidden="true">KFZ / 001</span>
           <img class="hero__portrait" src="assets/images/designer-character.webp" alt="Ilustração monocromática do designer de perfil, segurando um celular e usando uma jaqueta ilustrada." width="1195" height="1600" fetchpriority="high" />
           <p class="hero__portrait-note"><span>O CRIADOR</span><strong>POR TRÁS<br />DO UNIVERSO</strong></p>
-          <span class="hero__vertical" aria-hidden="true">GOOD FOR HEALTH...</span>
         </div>
 
         <div class="hero__stamp" aria-hidden="true"><span>●</span><span>ACESSO<br />LIBERADO</span></div>
@@ -155,7 +131,6 @@
         <div class="hero__visual" data-reveal>          
           <div class="hero__orbit hero__orbit--outer" aria-hidden="true">
           <span class="hero__vertical" aria-hidden="true">...BAD FOR EDUCATION</span>
-
           </div>
           <div class="hero__orbit hero__orbit--inner" aria-hidden="true"></div>
           <div class="hero__red-disc" aria-hidden="true"></div>
